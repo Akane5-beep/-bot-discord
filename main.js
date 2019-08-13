@@ -1,13 +1,14 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
+const { TOKEN, PREFIX } = require("./config");
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+client.on("ready", () => {
+  console.log("je suis prêt");
 });
 
-client.on('message', msg => {
-  if (msg.content === 'ping') 
-    msg.reply('Pong!');
+client.on("message", msg => {
+  if (msg.content.startsWith(`${PREFIX}ping`))
+    msg.reply("Pong!");
 });
 
-client.login('NjEwODQyMTIzNTE1OTg1OTIx.XVLKxA.lL7gWyVqcitRhCxLKHkQBynGVt8');
+client.login(TOKEN);
