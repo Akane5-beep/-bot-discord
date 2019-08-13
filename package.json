@@ -1,0 +1,12 @@
+{
+  "name": "bot",
+  "version": "0.1.0",
+  "description": "discord bot ",
+  "main": "main.js",
+  "repository": "https://github.com/Akane5-beep/-bot-discord",
+  "author": "<gfranceschi546@gmail.com\ngit config --global user.name akane5-beep>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "discordjs/discord.js"
+  }
+}
